@@ -64,7 +64,7 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
         [ '5★',   'Average Rating' ],
         [ '100%', 'Satisfaction Guaranteed' ],
       ];
-      foreach ( $stats as [ $num, $label ] ) : ?>
+      foreach ( $stats as $s ) : $num = $s[0]; $label = $s[1]; ?>
       <div style="padding:32px 20px; background:#fff; border-radius:var(--radius-lg); border:1px solid var(--color-border);">
         <div style="font-size:2.5rem; font-weight:800; color:var(--color-primary); line-height:1;"><?php echo $num; ?></div>
         <div style="font-size:.95rem; color:var(--color-muted); margin-top:8px;"><?php echo $label; ?></div>
@@ -91,7 +91,7 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
         [ '⏱️', 'Reliability',   'We show up when we say we will and finish on schedule. Your time is valuable.' ],
         [ '💬', 'Communication', 'We keep you informed from start to finish so there are no surprises.' ],
       ];
-      foreach ( $values as [ $icon, $title, $desc ] ) : ?>
+      foreach ( $values as $v ) : $icon = $v[0]; $title = $v[1]; $desc = $v[2]; ?>
       <div class="value-card">
         <div class="icon"><?php echo $icon; ?></div>
         <h3><?php echo $title; ?></h3>
@@ -118,7 +118,7 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
         [ '🔒', 'Background Checked',    'Trustworthy professionals you\'re comfortable inviting into your home.' ],
         [ '🎓', 'Ongoing Training',      'We stay current with best practices and building codes in our trade.' ],
       ];
-      foreach ( $creds as [ $icon, $title, $desc ] ) : ?>
+      foreach ( $creds as $c ) : $icon = $c[0]; $title = $c[1]; $desc = $c[2]; ?>
       <div style="background:#fff; border:1px solid var(--color-border); border-radius:var(--radius-lg); padding:28px; display:flex; gap:16px; align-items:flex-start;">
         <div style="font-size:1.8rem; flex-shrink:0;"><?php echo $icon; ?></div>
         <div>

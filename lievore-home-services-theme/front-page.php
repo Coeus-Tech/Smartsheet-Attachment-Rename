@@ -99,7 +99,7 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
         [ '💡', 'Fixture Installation',     'Ceiling fans, light fixtures, bathroom hardware, faucets, and more installed cleanly.' ],
         [ '🎨', 'Interior Touch-Ups',       'Caulking, minor paint touch-ups, and finishing work to keep your home looking its best.' ],
       ];
-      foreach ( $services as [ $icon, $title, $desc ] ) : ?>
+      foreach ( $services as $s ) : $icon = $s[0]; $title = $s[1]; $desc = $s[2]; ?>
       <div class="service-card">
         <div class="service-icon"><?php echo $icon; ?></div>
         <h3><?php echo $title; ?></h3>
@@ -133,7 +133,7 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
             [ '💵', 'Upfront, Honest Pricing',    'No hidden fees. You get a clear quote before any work begins.' ],
             [ '🏆', 'Quality Workmanship',         'Attention to detail and pride in our craft on every single project.' ],
           ];
-          foreach ( $features as [ $icon, $title, $desc ] ) : ?>
+          foreach ( $features as $f ) : $icon = $f[0]; $title = $f[1]; $desc = $f[2]; ?>
           <div class="feature-item">
             <div class="feature-icon"><?php echo $icon; ?></div>
             <div>
@@ -164,13 +164,13 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
       <?php
       $reviews = [
         [ 'Michael T.', 'MT', 'Summit Township',
-          '"Called Lievore Home Services for a tricky drywall repair after a plumbing leak. The crew was professional, fast, and the finish was perfect. You can't even tell there was a hole!"' ],
+          '"Called Lievore Home Services for a tricky drywall repair after a plumbing leak. The crew was professional, fast, and the finish was perfect. You can\'t even tell there was a hole!"' ],
         [ 'Sandra R.', 'SR', 'Fairview Heights',
           '"Had them install a new ceiling fan and fix three sticky doors. Everything was done in one visit. Pricing was fair, no surprises. Highly recommend!"' ],
         [ 'Dave &amp; Karen M.', 'DK', 'Oakwood',
           '"These guys rebuilt our deck railing from scratch. Beautiful work, done ahead of schedule. Our neighbors keep asking who did it. Five stars without hesitation."' ],
       ];
-      foreach ( $reviews as [ $name, $initials, $location, $quote ] ) : ?>
+      foreach ( $reviews as $r ) : $name = $r[0]; $initials = $r[1]; $location = $r[2]; $quote = $r[3]; ?>
       <div class="testimonial-card">
         <div class="stars">★★★★★</div>
         <blockquote><?php echo $quote; ?></blockquote>

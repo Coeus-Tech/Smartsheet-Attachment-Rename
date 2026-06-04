@@ -178,7 +178,7 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
         [ '3', '📅', 'Schedule the Work', 'Pick a time that works for you — often same week.' ],
         [ '4', '✅', 'Work Gets Done',    'We complete the job cleanly and professionally. You\'re left happy.' ],
       ];
-      foreach ( $steps as [ $num, $icon, $title, $desc ] ) : ?>
+      foreach ( $steps as $step ) : $num = $step[0]; $icon = $step[1]; $title = $step[2]; $desc = $step[3]; ?>
       <div>
         <div style="font-size:2.5rem; margin-bottom:12px;"><?php echo $icon; ?></div>
         <div style="display:inline-block; background:var(--color-primary); color:#fff; width:28px; height:28px; border-radius:50%; font-weight:700; font-size:.85rem; line-height:28px; margin-bottom:12px;"><?php echo $num; ?></div>
