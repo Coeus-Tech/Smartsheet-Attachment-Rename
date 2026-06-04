@@ -4,10 +4,10 @@
  */
 get_header();
 
-$phone   = get_theme_mod( 'lhs_phone',   '(555) 123-4567' );
-$email   = get_theme_mod( 'lhs_email',   'info@lievore homeservices.com' );
-$address = get_theme_mod( 'lhs_address', 'Serving Your City &amp; Surrounding Areas' );
-$hours   = get_theme_mod( 'lhs_hours',   'Mon–Fri: 7am–6pm  |  Sat: 8am–4pm' );
+$phone   = get_theme_mod( 'lhs_phone',   '(816) 205-3183' );
+$email   = get_theme_mod( 'lhs_email',   'info@lievore-homeservices.com' );
+$address = get_theme_mod( 'lhs_address', 'Saint Joseph, MO &amp; Surrounding Areas' );
+$hours   = get_theme_mod( 'lhs_hours',   'Opens 9 AM &mdash; Call or text anytime' );
 $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
 ?>
 
@@ -18,8 +18,8 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
       <span>Contact</span>
     </nav>
-    <h1>Get a Free Quote</h1>
-    <p>Tell us about your project and we'll get back to you within one business day.</p>
+    <h1>Get a Free Quote from Matt</h1>
+    <p>Call, text, or fill out the form — fast response, fair price.</p>
   </div>
 </section>
 
@@ -30,14 +30,14 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
 
       <!-- Left: Contact Info -->
       <div class="contact-info">
-        <div class="section-tag">Reach Us</div>
-        <h2>We'd Love to Hear From You</h2>
-        <p>Whether you know exactly what you need or aren't sure where to start, give us a call or fill out the form. We'll figure it out together.</p>
+        <div class="section-tag">Reach Matt</div>
+        <h2>Let's Talk About Your Project</h2>
+        <p style="color:var(--color-muted); margin-bottom:28px;">Whether you have one small fix or a full honey-do list, Matt will get back to you quickly with a free, no-pressure estimate.</p>
 
         <div class="contact-detail">
           <div class="contact-detail-icon">📞</div>
           <div>
-            <h4>Phone</h4>
+            <h4>Call or Text</h4>
             <a href="tel:<?php echo esc_attr( $phone_clean ); ?>"><?php echo esc_html( $phone ); ?></a>
           </div>
         </div>
@@ -53,8 +53,8 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
         <div class="contact-detail">
           <div class="contact-detail-icon">📍</div>
           <div>
-            <h4>Service Area</h4>
-            <p><?php echo esc_html( $address ); ?></p>
+            <h4>Location &amp; Service Area</h4>
+            <p>3121 Gene Field Rd, St Joseph, MO 64506<br>Serving Saint Joseph and nearby areas</p>
           </div>
         </div>
 
@@ -62,19 +62,18 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
           <div class="contact-detail-icon">🕐</div>
           <div>
             <h4>Hours</h4>
-            <p><?php echo esc_html( $hours ); ?></p>
+            <p><?php echo $hours; ?></p>
           </div>
         </div>
 
-        <!-- Trust signals -->
-        <div style="margin-top:32px; background:var(--color-primary-lt); border-radius:var(--radius-lg); padding:24px;">
-          <h3 style="font-size:1rem; margin-bottom:14px; color:var(--color-primary-dk);">Why Homeowners Choose Us</h3>
-          <ul style="display:flex; flex-direction:column; gap:10px;">
-            <?php
-            $trust = [ '✅ Free estimates, no obligation', '✅ Licensed &amp; fully insured', '✅ Same-week scheduling available', '✅ Upfront pricing — no hidden fees', '✅ 5-star rated by local homeowners' ];
-            foreach ( $trust as $t ) : ?>
-            <li style="font-size:.9rem; color:var(--color-mid);"><?php echo $t; ?></li>
-            <?php endforeach; ?>
+        <div style="margin-top:28px; background:var(--color-primary-lt); border-radius:var(--radius-lg); padding:22px;">
+          <h3 style="font-size:.95rem; margin-bottom:12px; color:var(--color-primary-dk);">Why Homeowners Choose Matt</h3>
+          <ul style="display:flex; flex-direction:column; gap:9px;">
+            <li style="font-size:.88rem; color:var(--color-mid);">✅ 5.0★ on Google — 10+ reviews</li>
+            <li style="font-size:.88rem; color:var(--color-mid);">✅ BBB Accredited Business</li>
+            <li style="font-size:.88rem; color:var(--color-mid);">✅ You deal directly with Matt — always</li>
+            <li style="font-size:.88rem; color:var(--color-mid);">✅ Fair, upfront pricing — no surprises</li>
+            <li style="font-size:.88rem; color:var(--color-mid);">✅ Shows up when he says he will</li>
           </ul>
         </div>
       </div>
@@ -84,7 +83,7 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
         <h3>Request a Free Quote</h3>
 
         <div class="form-success" id="form-success" role="alert">
-          ✅ Thank you! We've received your request and will be in touch within one business day.
+          ✅ Thanks! Matt will get back to you shortly with a free estimate.
         </div>
 
         <form id="quote-form" novalidate>
@@ -92,12 +91,12 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
 
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Full Name <span style="color:#dc2626;">*</span></label>
+              <label for="name">Your Name <span style="color:#dc2626;">*</span></label>
               <input type="text" id="name" name="name" placeholder="Jane Smith" required>
             </div>
             <div class="form-group">
               <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+              <input type="tel" id="phone" name="phone" placeholder="(816) 000-0000">
             </div>
           </div>
 
@@ -107,28 +106,28 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
           </div>
 
           <div class="form-group">
-            <label for="service">Type of Service Needed</label>
+            <label for="service">What Do You Need?</label>
             <select id="service" name="service">
               <option value="">— Select a service —</option>
-              <option>General Repairs</option>
-              <option>Carpentry &amp; Woodwork</option>
-              <option>Doors &amp; Windows</option>
-              <option>Drywall &amp; Patching</option>
-              <option>Fixture Installation</option>
-              <option>Tile &amp; Flooring</option>
+              <option>Honey-Do List Visit (multiple small jobs)</option>
+              <option>General Home Repairs</option>
+              <option>Fixture &amp; Fan Installation</option>
+              <option>Carpentry &amp; Assembly</option>
+              <option>Lawn Mowing &amp; Maintenance</option>
+              <option>Lawn Fertilization &amp; Seeding</option>
               <option>Multiple Services / Not Sure</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="message">Describe Your Project <span style="color:#dc2626;">*</span></label>
-            <textarea id="message" name="message" placeholder="Tell us what needs to be done, the size of the job, and anything else helpful…" required></textarea>
+            <label for="message">Tell Matt About Your Project <span style="color:#dc2626;">*</span></label>
+            <textarea id="message" name="message" placeholder="Describe what needs to be done. The more detail, the better Matt can quote you..." required></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary btn-lg" style="width:100%; justify-content:center;">
-            Send My Request
+            Send to Matt
           </button>
-          <p class="form-note">🔒 Your information is kept private and never shared. We'll respond within 1 business day.</p>
+          <p class="form-note">🔒 Your info stays private. Matt typically responds same day.</p>
         </form>
       </div>
 

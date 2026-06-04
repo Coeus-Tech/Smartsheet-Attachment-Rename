@@ -4,7 +4,7 @@
  */
 get_header();
 
-$phone       = get_theme_mod( 'lhs_phone',   '(555) 123-4567' );
+$phone       = get_theme_mod( 'lhs_phone',   '(816) 205-3183' );
 $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
 ?>
 
@@ -15,8 +15,8 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
       <span>Services</span>
     </nav>
-    <h1>Our Services</h1>
-    <p>Professional handyman &amp; home repair — done right the first time.</p>
+    <h1>Services</h1>
+    <p>Handyman repairs &amp; lawn care in Saint Joseph, MO — all done personally by Matt.</p>
   </div>
 </section>
 
@@ -24,134 +24,134 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
 <section class="section section--alt">
   <div class="container">
     <div class="section-header">
-      <div class="section-tag">What We Offer</div>
-      <h2>Complete Home Repair Solutions</h2>
+      <div class="section-tag">What Matt Offers</div>
+      <h2>One Call Covers It All</h2>
       <p>
-        Whether it's a single leaky faucet or a full list of deferred maintenance, Lievore Home Services has the skills
-        and tools to handle it. All work is performed by experienced tradespeople and backed by our satisfaction guarantee.
+        Whether you need your lawn mowed every week or have a list of repairs piling up around the house,
+        Matt handles it. Every job is done personally — fair quote upfront, quality work, clean when finished.
       </p>
     </div>
 
     <div class="services-detail-grid">
 
+      <!-- Honey-Do List -->
+      <div class="service-detail">
+        <div class="service-detail-header">
+          <div class="service-detail-icon">📋</div>
+          <div>
+            <h3>The Honey-Do List Visit</h3>
+            <p style="color:var(--color-primary);font-size:.9rem;margin:0;font-weight:600;">Matt's Signature Service</p>
+          </div>
+        </div>
+        <div class="service-detail-body">
+          <p>Have 5, 6, 10 small jobs that just never get done? Book one visit and Matt knocks them all out in a single trip — saving you time and money vs. hiring multiple people.</p>
+          <ul class="service-list">
+            <li>Caulking &amp; weatherstripping</li>
+            <li>Shelf &amp; TV mounting</li>
+            <li>Door &amp; cabinet adjustments</li>
+            <li>Fan &amp; light fixture installs</li>
+            <li>Hardware &amp; fixture swaps</li>
+            <li>Furniture assembly</li>
+          </ul>
+          <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary">Book a Honey-Do Visit</a>
+        </div>
+      </div>
+
       <!-- General Repairs -->
       <div class="service-detail">
         <div class="service-detail-header">
           <div class="service-detail-icon">🔨</div>
-          <div>
-            <h3>General Repairs</h3>
-            <p style="color:var(--color-primary);font-size:.9rem;margin:0;font-weight:600;">Most Popular</p>
-          </div>
+          <div><h3>General Home Repairs</h3></div>
         </div>
         <div class="service-detail-body">
-          <p>The everyday repairs that keep your home running smoothly. We handle the to-do list so you don't have to.</p>
+          <p>The everyday repairs that keep your home safe and functional — done right, at a fair price.</p>
           <ul class="service-list">
-            <li>Squeaky floors &amp; loose boards</li>
-            <li>Door &amp; cabinet hinge repair</li>
-            <li>Weather stripping &amp; caulking</li>
-            <li>Gutter cleaning &amp; minor repair</li>
-            <li>Fence post &amp; gate repair</li>
-            <li>Deck board replacement</li>
+            <li>Drywall repair &amp; patching</li>
+            <li>Door repair &amp; adjustment</li>
+            <li>Flooring repair</li>
+            <li>Fence &amp; gate repair</li>
+            <li>Minor plumbing repairs</li>
+            <li>Minor electrical repairs</li>
           </ul>
           <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary">Request a Quote</a>
         </div>
       </div>
 
-      <!-- Carpentry -->
-      <div class="service-detail">
-        <div class="service-detail-header">
-          <div class="service-detail-icon">🪚</div>
-          <div><h3>Carpentry &amp; Woodwork</h3></div>
-        </div>
-        <div class="service-detail-body">
-          <p>From decorative trim to functional built-ins, our carpentry work combines skill with an eye for detail.</p>
-          <ul class="service-list">
-            <li>Crown molding &amp; baseboard trim</li>
-            <li>Custom shelving &amp; built-ins</li>
-            <li>Stair tread replacement</li>
-            <li>Wood rot repair</li>
-            <li>Deck &amp; fence construction</li>
-            <li>Cabinet repair &amp; installation</li>
-          </ul>
-          <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary">Request a Quote</a>
-        </div>
-      </div>
-
-      <!-- Doors & Windows -->
-      <div class="service-detail">
-        <div class="service-detail-header">
-          <div class="service-detail-icon">🚪</div>
-          <div><h3>Doors &amp; Windows</h3></div>
-        </div>
-        <div class="service-detail-body">
-          <p>Properly fitted doors and sealed windows improve security, comfort, and energy efficiency in your home.</p>
-          <ul class="service-list">
-            <li>Interior &amp; exterior door install</li>
-            <li>Door frame repair</li>
-            <li>Storm door installation</li>
-            <li>Window re-glazing &amp; sealing</li>
-            <li>Screen repair &amp; replacement</li>
-            <li>Sliding door adjustment</li>
-          </ul>
-          <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary">Request a Quote</a>
-        </div>
-      </div>
-
-      <!-- Drywall -->
-      <div class="service-detail">
-        <div class="service-detail-header">
-          <div class="service-detail-icon">🧱</div>
-          <div><h3>Drywall &amp; Patching</h3></div>
-        </div>
-        <div class="service-detail-body">
-          <p>We repair holes, cracks, and water-damaged drywall and leave a smooth finish ready for paint.</p>
-          <ul class="service-list">
-            <li>Nail pop &amp; crack repair</li>
-            <li>Small to large hole patching</li>
-            <li>Water damage restoration</li>
-            <li>Texture matching</li>
-            <li>Full drywall panel replacement</li>
-            <li>Ceiling repair</li>
-          </ul>
-          <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary">Request a Quote</a>
-        </div>
-      </div>
-
-      <!-- Fixture Installation -->
+      <!-- Fixture & Fan Installation -->
       <div class="service-detail">
         <div class="service-detail-header">
           <div class="service-detail-icon">💡</div>
-          <div><h3>Fixture Installation</h3></div>
+          <div><h3>Fixture &amp; Fan Installation</h3></div>
         </div>
         <div class="service-detail-body">
-          <p>New fixtures transform the look and function of any room. We install cleanly with no mess left behind.</p>
+          <p>New fixtures make a big difference. Matt installs them cleanly, with no mess left behind.</p>
           <ul class="service-list">
-            <li>Ceiling fan installation</li>
-            <li>Light fixture swaps</li>
-            <li>Faucet &amp; sink installation</li>
-            <li>Bathroom hardware sets</li>
-            <li>Towel bars &amp; toilet paper holders</li>
+            <li>Ceiling fan installation &amp; repair</li>
+            <li>Light fixture installation</li>
+            <li>Plumbing fixture installation</li>
+            <li>Appliance installation</li>
+            <li>Smart home device setup</li>
             <li>TV mounting &amp; cable management</li>
           </ul>
           <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary">Request a Quote</a>
         </div>
       </div>
 
-      <!-- Tile & Flooring -->
+      <!-- Carpentry & Assembly -->
       <div class="service-detail">
         <div class="service-detail-header">
-          <div class="service-detail-icon">🪵</div>
-          <div><h3>Tile &amp; Flooring</h3></div>
+          <div class="service-detail-icon">🪚</div>
+          <div><h3>Carpentry &amp; Assembly</h3></div>
         </div>
         <div class="service-detail-body">
-          <p>Keep your floors and tile surfaces looking sharp with professional repair and replacement services.</p>
+          <p>Careful, precise woodwork and assembly — from railing builds to flat-pack furniture.</p>
           <ul class="service-list">
-            <li>Cracked tile replacement</li>
-            <li>Grout repair &amp; re-grouting</li>
-            <li>Hardwood floor repair</li>
-            <li>Laminate &amp; vinyl plank repair</li>
-            <li>Threshold &amp; transition install</li>
-            <li>Subfloor repair</li>
+            <li>Railing &amp; deck repair/build</li>
+            <li>Floating shelf installation</li>
+            <li>Furniture assembly</li>
+            <li>Shed assembly</li>
+            <li>General construction</li>
+            <li>Wood rot repair</li>
+          </ul>
+          <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary">Request a Quote</a>
+        </div>
+      </div>
+
+      <!-- Lawn Mowing -->
+      <div class="service-detail">
+        <div class="service-detail-header">
+          <div class="service-detail-icon">🌿</div>
+          <div><h3>Lawn Mowing &amp; Maintenance</h3></div>
+        </div>
+        <div class="service-detail-body">
+          <p>Weekly or bi-weekly lawn service — mowing, trimming, edging, and full cleanup every visit.</p>
+          <ul class="service-list">
+            <li>Lawn mowing &amp; maintenance</li>
+            <li>Trimming &amp; edging</li>
+            <li>Clipping cleanup &amp; bagging</li>
+            <li>Weed control</li>
+            <li>Lawn pest control</li>
+            <li>Gutter cleaning</li>
+          </ul>
+          <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary">Request a Quote</a>
+        </div>
+      </div>
+
+      <!-- Lawn Health -->
+      <div class="service-detail">
+        <div class="service-detail-header">
+          <div class="service-detail-icon">🌱</div>
+          <div><h3>Lawn Health &amp; Fertilization</h3></div>
+        </div>
+        <div class="service-detail-body">
+          <p>Make your lawn the best-looking on the block with Matt's fertilization and seeding services.</p>
+          <ul class="service-list">
+            <li>Lawn fertilization</li>
+            <li>Grass seeding</li>
+            <li>Weed control treatments</li>
+            <li>Lawn pest control</li>
+            <li>Seasonal maintenance</li>
+            <li>Spring &amp; fall yard cleanup</li>
           </ul>
           <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary">Request a Quote</a>
         </div>
@@ -161,23 +161,33 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
   </div>
 </section>
 
+<!-- BUNDLE & SAVE -->
+<section class="section" style="background:var(--color-primary-lt); border-top:1px solid var(--color-border); border-bottom:1px solid var(--color-border);">
+  <div class="container" style="text-align:center; max-width:680px;">
+    <div class="section-tag">Save More</div>
+    <h2 style="margin-bottom:14px;">Bundle Your Projects</h2>
+    <p style="font-size:1.05rem; margin-bottom:28px;">Instead of scheduling Matt four separate times for four different things, bundle them together in one visit. You save time, and Matt can often give a better rate on combined work.</p>
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary btn-lg">Talk to Matt About Bundling</a>
+  </div>
+</section>
+
 <!-- HOW IT WORKS -->
 <section class="section">
   <div class="container">
     <div class="section-header">
-      <div class="section-tag">Our Process</div>
+      <div class="section-tag">Simple Process</div>
       <h2>How It Works</h2>
-      <p>Getting your home repaired is simple and stress-free with Lievore Home Services.</p>
+      <p>Getting on Matt's schedule is fast and easy.</p>
     </div>
 
     <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:32px; text-align:center;">
       <?php
-      $steps = [
-        [ '1', '📞', 'Contact Us',        'Call or fill out our quick quote form. Tell us what needs fixing.' ],
-        [ '2', '📋', 'Free Estimate',     'We review your project and provide a clear, no-surprise quote.' ],
-        [ '3', '📅', 'Schedule the Work', 'Pick a time that works for you — often same week.' ],
-        [ '4', '✅', 'Work Gets Done',    'We complete the job cleanly and professionally. You\'re left happy.' ],
-      ];
+      $steps = array(
+        array( '1', '📞', 'Call or Text Matt',   'Reach out at (816) 205-3183 or fill out the quote form. Fast response guaranteed.' ),
+        array( '2', '📋', 'Get a Free Estimate', 'Matt reviews your job and gives you a clear, upfront quote — no surprises.' ),
+        array( '3', '📅', 'Pick Your Day',       'Choose a time that works for you. Often available the same week.' ),
+        array( '4', '✅', 'Job Done Right',      'Matt does the work, cleans up, and leaves you with quality results.' ),
+      );
       foreach ( $steps as $step ) : $num = $step[0]; $icon = $step[1]; $title = $step[2]; $desc = $step[3]; ?>
       <div>
         <div style="font-size:2.5rem; margin-bottom:12px;"><?php echo $icon; ?></div>
@@ -193,8 +203,8 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
 <!-- CTA BANNER -->
 <section class="cta-banner">
   <div class="container">
-    <h2>Ready to Get Your Project Started?</h2>
-    <p>Contact us today for a free estimate. No obligation, no pressure.</p>
+    <h2>Ready to Get Started?</h2>
+    <p>Call or text Matt for a free estimate. Serving Saint Joseph, MO and surrounding areas.</p>
     <div class="cta-actions">
       <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-white btn-lg">Get a Free Quote</a>
       <a href="tel:<?php echo esc_attr( $phone_clean ); ?>" class="btn btn-white-outline btn-lg">📞 <?php echo esc_html( $phone ); ?></a>
