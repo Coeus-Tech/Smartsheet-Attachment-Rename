@@ -14,18 +14,14 @@
     <div class="header-inner">
 
       <!-- Logo -->
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-logo" rel="home">
-        <div class="logo-icon" aria-hidden="true">🔧</div>
-        <div class="logo-text">
-          <?php
-          if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
-            the_custom_logo();
-          } else {
-            echo 'Lievore <span>Home Services</span>';
-          }
-          ?>
-        </div>
-      </a>
+      <?php if ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) : ?>
+        <div class="site-logo"><?php the_custom_logo(); ?></div>
+      <?php else : ?>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-logo" rel="home">
+          <div class="logo-icon" aria-hidden="true">🏠</div>
+          <div class="logo-text">Lievore <span>Lawn &amp; Home</span></div>
+        </a>
+      <?php endif; ?>
 
       <!-- Navigation -->
       <nav class="site-nav" id="primary-nav" role="navigation" aria-label="Primary">

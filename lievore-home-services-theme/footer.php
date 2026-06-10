@@ -11,8 +11,8 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
       <!-- Brand -->
       <div class="footer-brand">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-logo" style="color:#fff; text-decoration:none; display:inline-flex; align-items:center; gap:10px; font-size:1.1rem; font-weight:800;">
-          <div class="logo-icon">🔧</div>
-          <span>Lievore <span style="color:#60a5fa;">Home Services</span></span>
+          <div class="logo-icon">🏠</div>
+          <span>Lievore <span style="color:#e09e52;">Lawn &amp; Home</span></span>
         </a>
         <p>Handyman repairs &amp; lawn care in Saint Joseph, MO. Matt handles it personally — fair price, great work, every time.</p>
       </div>
