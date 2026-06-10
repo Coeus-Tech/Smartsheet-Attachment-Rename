@@ -15,7 +15,7 @@ $phone_clean = preg_replace( '/[^0-9+]/', '', $phone );
 
       <div class="hero-content">
         <div class="hero-tag">⭐ Saint Joseph, MO &bull; BBB Accredited</div>
-        <h1 id="hero-heading">Your Honey-Do List, Knocked Out in One Visit</h1>
+        <h1 id="hero-heading">Your Honey-Do List, <em>Knocked Out</em> in One Visit</h1>
         <p class="hero-sub">
           Hi, I'm Matt — owner of Lievore Lawn &amp; Home Services. I handle the repairs, yard work, and
           odd jobs that pile up around your home. Fair prices, no surprises, and I show up when I say I will.

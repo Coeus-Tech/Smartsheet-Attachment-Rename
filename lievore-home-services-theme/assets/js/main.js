@@ -72,24 +72,29 @@
     });
   }
 
-  // Animate elements into view
-  if ('IntersectionObserver' in window) {
+  // Scroll-reveal animations with stagger
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.classList.add('reveal-in');
             observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+      { threshold: 0.12, rootMargin: '0px 0px -50px 0px' }
     );
-    document.querySelectorAll('.service-card, .feature-item, .testimonial-card, .value-card').forEach((el) => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(20px)';
-      el.style.transition = 'opacity .4s ease, transform .4s ease';
+    const groups = document.querySelectorAll('.services-grid, .features-grid, .testimonials-grid, .values-grid, .services-detail-grid, .hero-cards-grid');
+    groups.forEach((group) => {
+      Array.from(group.children).forEach((el, i) => {
+        el.classList.add('reveal-ready');
+        el.style.transitionDelay = (i * 70) + 'ms';
+        observer.observe(el);
+      });
+    });
+    document.querySelectorAll('.section-header, .contact-form-wrap, .about-image').forEach((el) => {
+      el.classList.add('reveal-ready');
       observer.observe(el);
     });
   }

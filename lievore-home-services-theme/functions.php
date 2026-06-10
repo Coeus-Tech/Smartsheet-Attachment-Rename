@@ -5,7 +5,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-define( 'LHS_VERSION', '1.0.0' );
+define( 'LHS_VERSION', '2.0.0' );
 define( 'LHS_DIR',     get_template_directory() );
 define( 'LHS_URI',     get_template_directory_uri() );
 
@@ -38,7 +38,7 @@ add_action( 'after_setup_theme', 'lhs_setup' );
 function lhs_assets() {
 	wp_enqueue_style(
 		'google-fonts',
-		'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap',
+		'https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap',
 		array(),
 		null
 	);
