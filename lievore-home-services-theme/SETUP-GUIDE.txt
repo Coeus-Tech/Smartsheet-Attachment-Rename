@@ -1,0 +1,95 @@
+====================================================
+ LIEVORE HOME SERVICES – WordPress Theme Setup Guide
+====================================================
+
+WHAT YOU GET
+------------
+A complete, custom WordPress theme with 4 pages:
+  - Home (front-page.php)
+  - Services (page-services.php)
+  - About (page-about.php)
+  - Contact / Quote Form (page-contact.php)
+
+
+STEP 1 – GET WORDPRESS HOSTING
+--------------------------------
+You'll need a web host that supports WordPress. Good affordable options:
+  • Bluehost (bluehost.com) – ~$3/mo, includes free domain
+  • SiteGround (siteground.com) – ~$4/mo, fast support
+  • Hostinger (hostinger.com) – ~$2/mo, cheapest option
+  • WP Engine (wpengine.com) – ~$25/mo, premium managed hosting
+
+Most hosts have a "1-click WordPress install" in their control panel.
+Install WordPress, then log into your site at: https://yoursite.com/wp-admin
+
+
+STEP 2 – INSTALL THE THEME
+----------------------------
+1. Zip the entire "lievore-home-services-theme" folder
+   (Right-click → Compress/Zip on Mac/Windows)
+
+2. In your WordPress dashboard:
+   Go to: Appearance → Themes → Add New → Upload Theme
+
+3. Upload the zip file, then click "Activate"
+
+
+STEP 3 – CREATE YOUR PAGES
+----------------------------
+In WordPress dashboard → Pages → Add New, create these 4 pages:
+
+  Page Title  |  Template to Select (in Page Attributes panel)
+  ------------|---------------------------------------------------
+  Home        |  (no template needed — uses front-page.php)
+  Services    |  Services Page
+  About       |  About Page
+  Contact     |  Contact Page
+
+Then go to: Settings → Reading
+  → Set "Your homepage displays" to "A static page"
+  → Set "Homepage" to your "Home" page
+
+
+STEP 4 – UPDATE YOUR CONTACT INFO
+-----------------------------------
+Go to: Appearance → Customize → Business Contact Info
+
+Update these fields:
+  • Phone Number  (e.g. (412) 555-1234)
+  • Email Address (e.g. mike@lievore.com)
+  • Service Area  (e.g. Pittsburgh & Surrounding Areas)
+  • Business Hours
+
+
+STEP 5 – SET YOUR NAVIGATION
+------------------------------
+Go to: Appearance → Menus → Create Menu
+
+Add these pages: Home, Services, About, Contact
+Set the menu location to "Primary Navigation"
+Save.
+
+
+STEP 6 – POINT YOUR DOMAIN
+----------------------------
+If you already own LievoreHomeServices.com:
+  1. In your domain registrar (GoDaddy, Namecheap, etc.)
+     update the nameservers to point to your new host, OR
+  2. Update the A record to your host's IP address.
+  Your host's support team can walk you through this — just ask.
+
+
+OPTIONAL – CONTACT FORM EMAIL
+-------------------------------
+The quote form sends emails using WordPress's built-in wp_mail().
+To make sure emails actually deliver, install the free plugin:
+  "WP Mail SMTP" → configure it with your Gmail or email account.
+This ensures form submissions reach your inbox reliably.
+
+
+QUESTIONS?
+-----------
+The theme is clean, standard WordPress code — any WordPress developer
+or your hosting provider's support team can help with customizations.
+
+====================================================
